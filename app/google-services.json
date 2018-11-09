@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "176961066505",
+    "firebase_url": "https://dbapp-83fc1.firebaseio.com",
+    "project_id": "dbapp-83fc1",
+    "storage_bucket": "dbapp-83fc1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176961066505:android:2b8ec262c1d56d45",
+        "android_client_info": {
+          "package_name": "com.jpndev.dbapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "176961066505-tairsp9046rbrlkifpcd7hmdhfi0hapn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jpndev.dbapp",
+            "certificate_hash": "c9d8fc07d095feb912bda01a900f0551b4691fde"
+          }
+        },
+        {
+          "client_id": "176961066505-0ks6cdn87p10t6c6h7m72rf8aa5pa61f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jpndev.dbapp",
+            "certificate_hash": "5b7aac2fee82db5c03055476b58b342f4895d409"
+          }
+        },
+        {
+          "client_id": "176961066505-vu4j6e7ss8jk4hk58n3hq488oubsaoej.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALULjHIquX7Xq8OyLPapPSVqfdAqW7Pc0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "176961066505-vu4j6e7ss8jk4hk58n3hq488oubsaoej.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

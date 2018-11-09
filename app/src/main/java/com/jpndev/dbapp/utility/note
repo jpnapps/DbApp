@@ -1,0 +1,95 @@
+
+
+ check later
+databasr need to check later
+exportSchema = false
+{"email":"subash@beeinternational.co.uk","userid":"29fe6b7e1cc9f3ce2f5af0616c33f5a3037d358d"}
+
+//{"address_2":"Market Square","city":"East Midlands","country":"United Kingdom","dob":"1980-10-11","email":"subash@beeinternational.co.uk","first_name":"Bee","gender":"","last_name":"One","postcode":"NN1 2DL","response":0,"totalEarnings":"2061237.4400001","userid":"29fe6b7e1cc9f3ce2f5af0616c33f5a3037d358d","verification_status":"Verified"}
+
+com.google.gson.JsonSyntaxException: java.lang.NumberFormatException: Expected an int but was 2061237.4400001 at line 1 column 186 path $.giftcards.totalEarnings
+92
+down vote
+accepted
+I guess, the problem is here:
+
+compile 'com.squareup.okhttp3:logging-interceptor:3.3.0'
+compile 'com.squareup.okhttp3:okhttp:3.4.1'
+Try to make that:
+
+compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+compile 'com.squareup.okhttp3:okhttp:3.4.1
+
+
+autoLoginApi-https://api.suresh.beeone.co.uk/v1/appvalidate
+
+changes
+created table TMyGiftCard
+
+java.lang.IllegalStateException: Room cannot verify the data integrity. Looks like you've changed schema but forgot to update the version number. You can simply fix this by increasing the version number.
+        at android.arch.persistence.room.RoomOpenHelper.checkIdentity(RoomOpenHelper.java:119)
+        at android.arch.persistence.room.RoomOpenHelper.onOpen(RoomOpenHelper.java:100)
+        at android.arch.persistence.db.framework.FrameworkSQLiteOpenHelper$OpenHelper.onOpen(FrameworkSQLiteOpenHelper.java:133)
+        at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:310)
+        at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:194)
+        at android.arch.persistence.db.framework.FrameworkSQLiteOpenHelper$OpenHelper.getWritableSupportDatabase(FrameworkSQLiteOpenHelper.java:93)
+        at android.arch.persistence.db.framework.FrameworkSQLiteOpenHelper.getWritableDatabase(FrameworkSQLiteOpenHelper.java:54)
+        at android.arch.persistence.room.RoomDatabase.query(RoomDatabase.java:193)
+        at com.beeone.ccrbx.db.dao.CryptoCoinDao_Impl.getCryptoCoins(CryptoCoinDao_Impl.java:131)
+        at com.beeone.ccrbx.network.NetworkService$5.run(NetworkService.java:687)
+        at java.lang.Thread.run(Thread.java:764)
+
+
+
+        If you want to have both horizontal and vertical dividers:
+
+        Define horizontal & vertical divider drawables:
+
+        horizontal_divider.xml
+        <?xml version="1.0" encoding="utf-8"?>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" >
+          <size android:height="1dip" />
+          <solid android:color="#22000000" />
+        </shape>
+        vertical_divider.xml
+        <?xml version="1.0" encoding="utf-8"?>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" >
+            <size android:width="1dip" />
+            <solid android:color="#22000000" />
+        </shape>
+        Add this code segment below:
+
+        DividerItemDecoration verticalDecoration = new DividerItemDecoration(recyclerview.getContext(),
+                DividerItemDecoration.HORIZONTAL);
+        Drawable verticalDivider = ContextCompat.getDrawable(getActivity(), R.drawable.vertical_divider);
+        verticalDecoration.setDrawable(verticalDivider);
+        recyclerview.addItemDecoration(verticalDecoration);
+
+        DividerItemDecoration horizontalDecoration = new DividerItemDecoration(recyclerview.getContext(),
+                DividerItemDecoration.VERTICAL);
+        Drawable horizontalDivider = ContextCompat.getDrawable(getActivity(), R.drawable.horizontal_divider);
+        horizontalDecoration.setDrawable(horizontalDivider);
+        recyclerview.addItemDecoration(horizontalDecoration);
+
+
+
+
+        Using global static variables is not good software engineering practice.
+        Converting an object's fields into primitive data types can be a hectic job.
+        Using serializable is OK, but it's not performance-efficient on the Android platform.
+        Parcelable is specifically designed for Android and you should use it. Here is a simple example: Passing custom objects between Android activities
+        You can generate Parcelable code for you class using this site.
+
+
+
+
+         internal ccrb = ccrb total * internal rate
+         external ccrb = ccrb total *  ccrb[usd[ price]]
+         total ccrb    =   ccrb total
+
+          internal btc = btc_balance *  btc[usd[ price]]
+          external btc = btc_balance *  btc[usd[ price]]
+          total btc    =   btc_balance
+
+          mined ccrb       = beetobee[ccrb]
+          purchased ccrb   = wallet[ccrb_balance]
